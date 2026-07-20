@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="reportGeneration.Listeners"></listener>
+	</listeners>
+	<parameter name="browsers" value="chrome"></parameter> 
+	<test thread-count="5" name="Test"> 
+		<classes>
+
+			<!-- <class name="groceryTestScripts.GroceryLoginTest">
+				<methods>
+					<include
+						name="loginWithValidCredentials"></include>
+					<include name="loginWithValidUsernameInvalidPassword"></include>
+					<include name="loginWithInvalidUsernameValidPassword"></include>
+					<include name="loginWithInvalidUsernameInvalidPassword"></include>
+				</methods> 
+				use"<exclude>" if we want to exclude any methods from running
+			</class> 
+
+			<class name="groceryTestScripts.ManageDeliveryBoyTest"></class> -->
+		<!--	<class name="groceryTestScripts.GroceryLoginTest">
+				<methods>
+					<include name="loginWithInvalidUsernameInvalidPassword"></include>
+				</methods>
+			</class> -->
+			
+			<!-- <class name="groceryTestScripts.GroceryAdminUsersTest"></class> -->
+			<class name="groceryTestScripts.ManageDeliveryBoyTest"></class>
+			
+		</classes>
+	</test> 
+</suite>
